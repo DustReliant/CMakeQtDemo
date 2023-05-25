@@ -27,11 +27,8 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         Qt::Widgets
 )
 
-
-
 # 设置资源目录
 set(RESOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/resources)
-message("${RESOURCES_DIR}000000000000000000")
 # 添加资源文件
 file(GLOB_RECURSE RESOURCES_FILES "${RESOURCES_DIR}/*.png" "${RESOURCES_DIR}/*.jpg")
 add_custom_command(
@@ -41,18 +38,8 @@ add_custom_command(
     DEPENDS ${RESOURCES_FILES}
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
-
 # 生成资源文件
 qt5_add_resources(RESOURCES ${CMAKE_CURRENT_BINARY_DIR}/resources.qrc)
-
-
-
-
-
-
-
-
-
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
