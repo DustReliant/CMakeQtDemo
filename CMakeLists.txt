@@ -12,5 +12,22 @@ endif()
 project ("CMakeQtDemo")
 
 
+
 # 包含子项目。
-add_subdirectory (${CMAKE_SOURCE_DIR}/src/QLineEditSearch)
+#add_subdirectory (${CMAKE_SOURCE_DIR}/src/QLineEditSearch)
+add_subdirectory (${CMAKE_SOURCE_DIR}/src/QTableViewModelDelegate)
+
+# 找到所有含有mian函数的cpp文件，保存在mians里
+file(
+    GLOB_RECURSE mains RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/QLineEditSearch/main.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/QTableViewModelDelegate/main.cpp"
+)
+# 循环遍历每个含main的文件，分别编译生成exe文件
+foreach(mainfile IN LISTS mains)
+    # Get file name without directory
+    get_filename_component(mainname ${mainfile} NAME_WE)
+    add_executable(${mainname} ${mainfile})
+    # 添加库文件目录
+    target_link_libraries(${mainname} mosquitto mosquittopp)#链接库文件
+endforeach()
