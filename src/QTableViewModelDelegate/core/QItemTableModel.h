@@ -34,13 +34,14 @@ private:
     {
         QString text;
         int progress;
+        bool checked; // 新增的复选框状态
     };
 
     QVector<ItemData> m_data = 
     {
-        {"Item 1", 50},
-        {"Item 2", 80},
-        {"Item 3", 30},
+        {"Item 1", 50,true},
+        {"Item 2", 70,false},
+        {"Item 3", 30,false},
     };
 };
 #endif // QITEMTABLEMODEL_H

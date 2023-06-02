@@ -14,8 +14,9 @@ project ("CMakeQtDemo")
 
 
 # 包含子项目。
-#add_subdirectory (${CMAKE_SOURCE_DIR}/src/QLineEditSearch)
-add_subdirectory (${CMAKE_SOURCE_DIR}/src/QTableViewModelDelegate)
+#add_subdirectory (${CMAKE_SOURCE_DIR}/src/QLineEditSearch)QComboBoxFontColor
+#add_subdirectory (${CMAKE_SOURCE_DIR}/src/QTableViewModelDelegate)
+add_subdirectory (${CMAKE_SOURCE_DIR}/src/QComboBoxFontColor)
 
 # 找到所有含有mian函数的cpp文件，保存在mians里
 file(
