@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/14px-16展开.png</file>
+        <file>image/14px-16展开收起.png</file>
+        <file>image/开始.png</file>
+    </qresource>
+</RCC>
