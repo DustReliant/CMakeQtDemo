@@ -11,14 +11,25 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 将源代码添加到此项目的可执行文件。
-add_executable (${CMAKE_PROJECT_NAME} WIN32
-    "main.cpp"
-    "mainwindow.h"
-    "mainwindow.ui"
-    "mainwindow.cpp"
-    "../resources/img.qrc"
-)
+
+# 子项目的构建规则
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    # 子项目独立构建时的处理逻辑
+    # 将源代码添加到此项目的可执行文件。
+    add_executable (${CMAKE_PROJECT_NAME} WIN32
+        "main.cpp"
+        "mainwindow.h"
+        "mainwindow.ui"
+        "mainwindow.cpp"
+        "../resources/img.qrc"
+    )
+else()
+    # 主项目通过自定义目标来构建子项目时的处理逻辑
+    # 可以省略此部分，或者添加其他需要的操作
+endif()
+
+
+
 
 find_package(Qt5 COMPONENTS Core Widgets)
 target_link_libraries(${CMAKE_PROJECT_NAME}

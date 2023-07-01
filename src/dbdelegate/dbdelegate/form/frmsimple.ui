@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmSimple</class>
+ <widget class="QWidget" name="frmSimple">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <row>
+      <property name="text">
+       <string>新建行</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>新建行</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>新建行</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>新建行</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>新建行</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>下拉框</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>联动列1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>联动列2</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>COM1</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>1号楼</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>1层</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>COM2</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>1号楼</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>1层</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>COM2</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>2号楼</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>1层</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>COM4</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>1号楼</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>1层</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>COM1</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>2号楼</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>1层</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
