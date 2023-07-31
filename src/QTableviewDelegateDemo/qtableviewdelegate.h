@@ -8,6 +8,10 @@
 #include <QProgressBar>
 #include <QStyledItemDelegate>
 
+
+#define QGS_SHARED_PTR(P) typedef QSharedPointer<P> P##Ptr
+#define STD_SHARED_PTR(P) typedef std::shared_ptr<P> P##Ptr
+
 class QTableViewDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
